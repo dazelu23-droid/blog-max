@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --version)",
+      "PowerShell(node --version)",
+      "PowerShell(npm --version)",
+      "PowerShell(Test-Path \"C:\\\\Program Files\\\\nodejs\\\\node.exe\"; Test-Path \"$env:ProgramFiles\\\\nodejs\\\\node.exe\"; Test-Path \"$env:LOCALAPPDATA\\\\Programs\\\\nodejs\\\\node.exe\"; Get-ChildItem \"C:\\\\Program Files\\\\nodejs\" -ErrorAction SilentlyContinue; $env:PATH -split ';' | Select-String -Pattern node)",
+      "PowerShell(winget list --name Node 2>&1)",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\\" -Filter \"node.exe\" -Recurse -ErrorAction SilentlyContinue -Depth 3 | Select-Object -First 5 FullName; Get-ChildItem -Path \"$env:USERPROFILE\" -Filter \"node.exe\" -Recurse -ErrorAction SilentlyContinue | Select-Object -First 5 FullName)"
+    ]
+  }
+}

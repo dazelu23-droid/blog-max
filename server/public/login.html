@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign in — Margin Notes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="page narrow">
+    <header class="site-header">
+      <div class="brand">Margin&nbsp;Notes</div>
+      <nav class="site-nav">
+        <a href="/" data-i18n="nav_home">Home</a>
+      </nav>
+    </header>
+
+    <div class="auth-page">
+      <h1 data-i18n="login_heading">Welcome back</h1>
+      <p class="auth-sub" data-i18n="login_subtitle">Sign in to join the conversation.</p>
+
+      <form id="login-form" class="auth-form">
+        <label>
+          <span data-i18n="label_email">Email</span>
+          <input type="email" name="email" required autocomplete="email">
+        </label>
+        <label>
+          <span data-i18n="label_password">Password</span>
+          <div class="password-field">
+            <input type="password" name="password" required autocomplete="current-password">
+            <button type="button" class="password-toggle" data-i18n="show" aria-label="Show password">Show</button>
+          </div>
+        </label>
+        <button type="submit" class="btn btn-dark" data-i18n="login_button">Sign in</button>
+        <div class="form-note" id="login-note"></div>
+      </form>
+
+      <p class="auth-switch"><span data-i18n="login_newHere">New here?</span> <a id="signup-link" href="/signup.html" data-i18n="login_createAccount">Create an account</a></p>
+    </div>
+  </div>
+
+  <script src="/i18n.js"></script>
+  <script src="/app.js"></script>
+  <script>initLoginPage(); initPasswordToggles();</script>
+</body>
+</html>

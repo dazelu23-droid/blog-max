@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Margin Notes — Essays on making &amp; attention</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="page" id="page">
+    <header class="site-header">
+      <div class="brand">Margin&nbsp;Notes</div>
+      <nav class="site-nav">
+        <a href="/" class="active" data-i18n="nav_home">Home</a>
+        <a href="/#essays" data-i18n="nav_essays">Essays</a>
+        <a href="/#about" data-i18n="nav_about">About</a>
+        <a href="/#newsletter" data-i18n="nav_newsletter">Newsletter</a>
+        <span id="auth-slot"></span>
+      </nav>
+    </header>
+
+    <div class="content">
+      <div class="masthead">
+        <div class="eyebrow" data-i18n="masthead_eyebrow">Essays on making &amp; attention</div>
+        <h1 data-i18n="masthead_title">A quiet notebook about doing things the long way.</h1>
+        <p data-i18n="masthead_subtitle">New pieces most Sundays — on craft, small habits, and paying closer attention to ordinary things.</p>
+      </div>
+
+      <div id="featured-slot"></div>
+      <div class="post-grid" id="grid-slot"></div>
+
+      <div class="newsletter" id="newsletter">
+        <div>
+          <h4 data-i18n="newsletter_title">A short letter, most Sundays.</h4>
+          <p data-i18n="newsletter_subtitle">One essay, no noise. Unsubscribe anytime.</p>
+        </div>
+        <form id="subscribe-form">
+          <input type="email" name="email" data-i18n-placeholder="newsletter_placeholder" placeholder="you@email.com" required>
+          <button type="submit" class="btn btn-light" data-i18n="newsletter_button">Subscribe</button>
+        </form>
+      </div>
+      <div class="form-note" id="subscribe-note"></div>
+    </div>
+
+    <footer class="site-footer">
+      <span>© 2026 Margin Notes</span>
+      <div class="links"><a href="/" data-i18n="footer_rss">RSS</a><a href="/" data-i18n="footer_archive">Archive</a><a href="/" data-i18n="footer_contact">Contact</a></div>
+    </footer>
+  </div>
+
+  <script src="/i18n.js"></script>
+  <script src="/app.js"></script>
+  <script>(async () => { await syncLanguageFromAccount(); renderIndexPage(); initAuthNav(); })();</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Account settings — Margin Notes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="page narrow">
+    <header class="site-header">
+      <div class="brand">Margin&nbsp;Notes</div>
+      <nav class="site-nav">
+        <a href="/" data-i18n="nav_home">Home</a>
+        <span id="auth-slot"></span>
+      </nav>
+    </header>
+
+    <div id="account-slot">
+      <div class="state-msg" data-i18n="loading">Loading…</div>
+    </div>
+  </div>
+
+  <script src="/i18n.js"></script>
+  <script src="/app.js"></script>
+  <script>initAuthNav(); renderAccountPage();</script>
+</body>
+</html>
