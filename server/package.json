@@ -3,18 +3,21 @@
   "version": "1.0.0",
   "private": true,
   "description": "Backend server for the Margin Notes blog design",
-  "type": "commonjs",
-  "main": "server.js",
+  "type": "module",
+  "main": "src/index.js",
   "scripts": {
-    "start": "node server.js",
-    "seed": "node db.js --reseed"
-  },
-  "engines": {
-    "node": ">=22.5.0"
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
   },
   "dependencies": {
-    "cookie-parser": "^1.4.7",
-    "express": "^4.19.2",
-    "multer": "^2.2.0"
+    "hono": "^4.6.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true,
+    "sharp@0.34.5": true,
+    "workerd@1.20260708.1": true
   }
 }

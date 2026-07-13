@@ -1,0 +1,16 @@
+{
+  "name": "margin-notes-blog",
+  "main": "src/index.js",
+  "compatibility_date": "2026-07-01",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "none"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "margin-notes-blog-db",
+      "database_id": "4385c7fb-80b5-4d41-9d2d-e4450232cc24"
+    }
+  ]
+}
